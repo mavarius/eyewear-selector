@@ -1,6 +1,13 @@
 .callout {
-  font-size: 40px;
-  font-family: Montserrat-Bold;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  transition: all .5s;
+}
+
+.callout-selected {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  transition: all .5s;
 }
 
 .eyewear-list {
@@ -8,4 +15,12 @@
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+
+@media screen and (min-width: 760px) {
+  .callout {
+    font-size: 4.5rem;
+    line-height: 5.375rem;
+  }
 }

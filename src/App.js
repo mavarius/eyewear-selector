@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import initialState from './lib/eyewear'
-// import DetailView from './components/list-view/DetailView'
+import DetailView from './components/detail-view/DetailView'
 import ListView from './components/list-view/ListView'
 
 import './App.css'
@@ -23,13 +23,12 @@ class App extends Component {
 
   render() {
     const { list, selected } = this.state
-    console.log('INITIAL STATE:', this.state)
 
     return (
       <div className="app-container">
         <h1 className="header">DITTO</h1>
-        {/*<DetailView selected={selected} />*/}
-        <ListView list={list} setSelected={this.setSelected} />
+        {selected && <DetailView selectedItem={list.filter(item => item.id === selected)[0]} />}
+        <ListView list={list} setSelected={this.setSelected} selected={selected} />
       </div>
     )
   }

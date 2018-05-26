@@ -1,0 +1,65 @@
+.brand-callout {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-family: Montserrat-Bold;
+  transition: all .5s;
+}
+
+.detail-view {
+  width: 100%;
+  min-height: 600px;
+  margin: 60px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  transition: all .5s;
+}
+
+.image-block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.image-block > img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 60px;
+  max-width: 400px;
+}
+
+.details-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.info-block {
+  width: 100%;
+  transition: all .5s;
+}
+
+.shopping-cart {
+  width: 100%;
+  transition: all .5s;
+}
+
+@media screen and (min-width: 760px) {
+  .image-block > img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .brand-callout {
+    font-size: 4.5rem;
+    line-height: 5.375rem;
+  }
+
+  .info-block {
+    width: 46.6666%;
+  }
+
+  .shopping-cart {
+    width: 33.3333%;
+  }
+}
