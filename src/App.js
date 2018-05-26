@@ -23,11 +23,14 @@ class App extends Component {
 
   render() {
     const { list, selected } = this.state
+    const showDetails = selected ? "details-open" : "details-closed"
 
     return (
       <div className="app-container">
         <h1 className="header">DITTO</h1>
-        {selected && <DetailView selectedItem={list.filter(item => item.id === selected)[0]} />}
+        <div className={showDetails}>
+          {selected && <DetailView selectedItem={list.filter(item => item.id === selected)[0]} />}
+        </div>
         <ListView list={list} setSelected={this.setSelected} selected={selected} />
       </div>
     )

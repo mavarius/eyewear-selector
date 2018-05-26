@@ -1,6 +1,6 @@
 const importAll = r => {
     let images = {}
-    r.keys().map((item, index) => { images[item.replace('./', '/assets/images/')] = r(item) })
+    r.keys().forEach((item, index) => { images[item.replace('./', '/assets/images/')] = r(item) })
     return images
 }
 
