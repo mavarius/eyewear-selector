@@ -1,17 +1,23 @@
 .preview {
   width: 48%;
+  min-height: 160px;
+  padding: 10px;
   box-sizing: border-box;
   border: 2px solid rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   transition: all .25s;
 }
 
-.preview > p {
+.preview p {
   font-size: 0.875rem;
   line-height: 1.41575rem;
   display: block;
 }
 
-.preview > img {
+.preview img {
   width: 100%;
 }
 

@@ -27,7 +27,7 @@ class App extends Component {
 
     return (
       <div className="app-container">
-        <h1 className="header">DITTO</h1>
+        <h1 className="logo">DITTO</h1>
         <div className={showDetails}>
           {selected && <DetailView selectedItem={list.filter(item => item.id === selected)[0]} />}
         </div>
