@@ -1,0 +1,13 @@
+.preview {
+  width: 50%;
+  
+}
+
+.preview > p {
+  font-size: 14px;
+  display: block;
+}
+
+.preview > img {
+  width: 100%;
+}
